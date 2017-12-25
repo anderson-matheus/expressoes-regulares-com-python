@@ -4,13 +4,13 @@ import re
 
 lista = ['1teste', '4qualquer', 'maisuma5', 'teste6']
 
-path1 = r'^\d'
-path2 = r'.*\d$'
+pat1 = r'^\d'
+pat2 = r'.*\d$'
 for element in lista:
-	m = re.match(path1, element)
+	m = re.match(pat1, element)
 	if m:
 		print('START: ', element)
 
-	m = re.match(path2, element)
+	m = re.match(pat2, element)
 	if m:
 		print('	END: ', element)
